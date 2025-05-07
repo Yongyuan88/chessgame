@@ -1,39 +1,19 @@
-# chessgame
-```python
-class ChessGame:
-    def __init__(self):
-        self.board = self.create_board()
-        self.current_player = 'White'
-
-    def create_board(self):
-        board = [
-            ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
-            ['p'] * 8,
-            [' '] * 8,
-            [' '] * 8,
-            [' '] * 8,
-            [' '] * 8,
-            ['P'] * 8,
-            ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
-        ]
-        return board
-
-    def print_board(self):
-        for row in self.board:
-            print(' '.join(row))
-
-    def switch_player(self):
-        self.current_player = 'Black' if self.current_player == 'White' else 'White'
-
-    def play_game(self):
-        while True:
-            self.print_board()
-            print(f"{self.current_player}'s turn.")
-            move = input("Enter your move (e.g. a2a4): ")
-            # Implement move logic here
-            self.switch_player()
-
-if __name__ == "__main__":
-    game = ChessGame()
-    game.play_game()
-```
+<!doctype html><html><head><meta charset="UTF-8"/><title>WG后台管理系统</title><link rel="icon" href="favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><script defer="defer" src="/static/runtime~main.9bd2183cfabc30bbc886.js"></script><script defer="defer" src="/static/main.c550dbc19d67e03c9127.js"></script></head><body data-version="1746581800352"><div id="app"></div></body><script defer="defer">window.addEventListener('load', function() {
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(regs) {
+          for (var key in regs) {
+            regs[key].unregister()
+          }
+          navigator.serviceWorker
+            .register('/service-worker-1746581800352.js')
+            [
+              // .then(function () {
+              //   console.log('serviceworker register success')
+              // })
+              'catch'
+            ](function(err) {
+              console.error('serviceworker register fail')
+            })
+        })
+      }
+    })</script></html>
